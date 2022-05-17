@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>Tasting Cars</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="Keywords" content="Cars" />
+    <meta name="Description" content="Tasting the cars" />
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        class="logo"
+        src="./assets/img/logo/tc-white-logo.svg"
+        alt="logo-image"
+      />
+      <button class="favorite-menu">
+        お気に入り一覧
+        <img src="./assets/img/icon/arrowButton.png" alt="arrow-icon" />
+      </button>
+      <ul class="header-nav-container">
+        <li class="h-nav-item">HOME</li>
+        <li class="h-nav-item">検索</li>
+        <li class="h-nav-item">お気に入り</li>
+        <li class="h-nav-item">お知らせ</li>
+        <li class="h-nav-item">サービスについて</li>
+      </ul>
+    </header>
+    <main>
+      <!-- top-slider -->
+      <div class="top-slider">
+        <ul class="top-slider-area">
+          <li class="slider-item">ここにキャッチコピーが入る1</li>
+          <li class="slider-item">ここにキャッチコピーが入る2</li>
+          <li class="slider-item">ここにキャッチコピーが入る3</li>
+          <li class="slider-item">ここにキャッチコピーが入る4</li>
+          <li class="slider-item">ここにキャッチコピーが入る5</li>
+        </ul>
+        <div class="indicator-container"><ul id="indicator"></ul></div>
+      </div>
+      <!-- /top-slider -->
+      <!-- carousel -->
+      <div class="carousel-description">
+        <p class="carousel-title">オススメの新型車（仮）</p>
+        <p class="carousel-text">
+          説明文：ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+        </p>
+      </div>
+      <div class="carousel-container">
+        <img
+          id="arrow-left-slide"
+          src="./assets/img/icon/arrowLeftSlide.png"
+          alt="arrowLeftSlide-button"
+        />
+        <img
+          id="arrow-right-slide"
+          src="./assets/img/icon/arrowRightSlide.png"
+          alt="arrowRightSlide-button"
+        />
+        <ul class="carousel-area-f">
+          <li class="carousel-item">
+            <img
+              class="car-img"
+              src="./assets/img/catalog/slideshow/car1.png"
+              alt="car-image"
+            />
+            <div class="car-info">
+              <p class="maker-name">マツダ</p>
+              <p class="car-name">ダミーテキスト</p>
+              <div class="favorite-btn-container">
+                <p>お気に入りに追加</p>
+                <span id="favorite-btn-1" class=""></span>
+              </div>
+              <button class="show-detail-btn">
+                詳細を見る
+                <img src="./assets/img/icon/arrowRightSlideButton.png" alt="" />
+              </button>
+            </div>
+          </li>
+          <li class="carousel-item">
+            <img
+              class="car-img"
+              src="./assets/img/catalog/slideshow/car2.png"
+              alt="car-image"
+            />
+            <div class="car-info">
+              <p class="maker-name">マツダ</p>
+              <p class="car-name">ダミーテキスト</p>
+              <div class="favorite-btn-container">
+                <p>お気に入りに追加</p>
+                <span id="favorite-btn-2" class=""></span>
+              </div>
+              <button class="show-detail-btn">
+                詳細を見る
+                <img src="./assets/img/icon/arrowRightSlideButton.png" alt="" />
+              </button>
+            </div>
+          </li>
+          <li class="carousel-item">
+            <img
+              class="car-img"
+              src="./assets/img/catalog/slideshow/car3.png"
+              alt="car-image"
+            />
+            <div class="car-info">
+              <p class="maker-name">マツダ</p>
+              <p class="car-name">ダミーテキスト</p>
+              <div class="favorite-btn-container">
+                <p>お気に入りに追加</p>
+                <span id="favorite-btn-3" class=""></span>
+              </div>
+              <button class="show-detail-btn">
+                詳細を見る
+                <img src="./assets/img/icon/arrowRightSlideButton.png" alt="" />
+              </button>
+            </div>
+          </li>
+          <li class="carousel-item">
+            <img
+              class="car-img"
+              src="./assets/img/catalog/slideshow/car4.png"
+              alt="car-image"
+            />
+            <div class="car-info">
+              <p class="maker-name">マツダ</p>
+              <p class="car-name">ダミーテキスト</p>
+              <div class="favorite-btn-container">
+                <p>お気に入りに追加</p>
+                <span id="favorite-btn-4" class=""></span>
+              </div>
+              <button class="show-detail-btn">
+                詳細を見る
+                <img src="./assets/img/icon/arrowRightSlideButton.png" alt="" />
+              </button>
+            </div>
+          </li>
+          <li class="carousel-item">
+            <img
+              class="car-img"
+              src="./assets/img/catalog/slideshow/car5.png"
+              alt="car-image"
+            />
+            <div class="car-info">
+              <p class="maker-name">マツダ</p>
+              <p class="car-name">ダミーテキスト</p>
+              <div class="favorite-btn-container">
+                <p>お気に入りに追加</p>
+                <span id="favorite-btn-5" class=""></span>
+              </div>
+              <button class="show-detail-btn">
+                詳細を見る
+                <img src="./assets/img/icon/arrowRightSlideButton.png" alt="" />
+              </button>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- /carousel -->
+      <!-- search-container -->
+      <div class="search-container">
+        <!-- s-car-type-container (car-type) -->
+        <div class="s-car-type-container">
+          <p class="search-title">車種から探す</p>
+          <ul class="car-type-list">
+            <li class="car-type-item">
+              <img src="./assets/img/catalog/content/car1.png" alt="" />
+              <div class="car-item-select-field">
+                <p class="item-title">軽自動車</p>
+                <input type="checkbox" name="" id="" />
+              </div>
+            </li>
+            <li class="car-type-item">
+              <img src="./assets/img/catalog/content/car2.png" alt="" />
+              <div class="car-item-select-field">
+                <p class="item-title">軽自動車</p>
+                <input type="checkbox" name="" id="" />
+              </div>
+            </li>
+            <li class="car-type-item">
+              <img src="./assets/img/catalog/content/car3.png" alt="" />
+              <div class="car-item-select-field">
+                <p class="item-title">軽自動車</p>
+                <input type="checkbox" name="" id="" />
+              </div>
+            </li>
+            <li class="car-type-item">
+              <img src="./assets/img/catalog/content/car4.png" alt="" />
+              <div class="car-item-select-field">
+                <p class="item-title">軽自動車</p>
+                <input type="checkbox" name="" id="" />
+              </div>
+            </li>
+            <li class="car-type-item">
+              <img src="./assets/img/catalog/content/car5.png" alt="" />
+              <div class="car-item-select-field">
+                <p class="item-title">軽自動車</p>
+                <input type="checkbox" name="" id="" />
+              </div>
+            </li>
+            <li class="car-type-item">
+              <img src="./assets/img/catalog/content/car6.png" alt="" />
+              <div class="car-item-select-field">
+                <p class="item-title">軽自動車</p>
+                <input type="checkbox" name="" id="" />
+              </div>
+            </li>
+            <li class="car-type-item">
+              <img src="./assets/img/catalog/content/car7.png" alt="" />
+              <div class="car-item-select-field">
+                <p class="item-title">軽自動車</p>
+                <input type="checkbox" name="" id="" />
+              </div>
+            </li>
+            <li class="car-type-item">
+              <img src="./assets/img/catalog/content/car8.png" alt="" />
+              <div class="car-item-select-field">
+                <p class="item-title">軽自動車</p>
+                <input type="checkbox" name="" id="" />
+              </div>
+            </li>
+            <li class="car-type-item">
+              <img src="./assets/img/catalog/content/car9.png" alt="" />
+              <div class="car-item-select-field">
+                <p class="item-title">軽自動車</p>
+                <input type="checkbox" name="" id="" />
+              </div>
+            </li>
+          </ul>
+          <div class="option-search-container">
+            <p class="title-text">オプション検索</p>
+            <ul class="option-contents">
+              <li class="option-item">
+                <p class="item-title">メーカー</p>
+                <select name="maker" id="">
+                  <option value="" selected>日産</option>
+                  <option value="">ダミー</option>
+                  <option value="">ダミー</option>
+                </select>
+              </li>
+              <li class="option-item">
+                <p class="item-title">排気量</p>
+                <select name="cc" id="">
+                  <option value="" selected>660cc</option>
+                  <option value="">ダミーcc</option>
+                  <option value="">ダミーcc</option>
+                </select>
+              </li>
+              <li class="option-item">
+                <p class="item-title">AT/MT</p>
+                <div class="select-transmission">
+                  <button id="at-1" class="at-btn in-active">AT</button>
+                  <button id="mt-1" class="mt-btn">MT</button>
+                </div>
+              </li>
+            </ul>
+            <button class="search-submit-btn">
+              この条件で探す
+              <img src="./assets/img/icon/arrowButton.png" alt="" />
+            </button>
+          </div>
+        </div>
+        <!-- /s-car-container (car-type) -->
+        <div class="flex-column">
+          <!-- s-car-marker-container (car-maker) -->
+          <div class="s-car-marker-container">
+            <p class="search-title">メーカーから探す</p>
+            <ul class="s-maker-contents">
+              <li class="option-item">
+                <p class="item-title">メーカー</p>
+                <select name="maker" id="">
+                  <option value="" selected>日産</option>
+                  <option value="">ダミー</option>
+                  <option value="">ダミー</option>
+                </select>
+              </li>
+              <li class="option-item">
+                <p class="item-title">車種</p>
+                <select name="car-type" id="">
+                  <option value="" selected>軽自動車</option>
+                  <option value="">ダミー車種</option>
+                  <option value="">ダミー車種</option>
+                </select>
+              </li>
+            </ul>
+            <ul class="car-type-list">
+              <li class="car-type-item">
+                <img src="./assets/img/catalog/content/car1.png" alt="" />
+                <div class="car-item-select-field">
+                  <p class="item-title">デイズ ルークス</p>
+                  <input type="checkbox" name="" id="" />
+                </div>
+              </li>
+              <li class="car-type-item">
+                <img src="./assets/img/catalog/content/car2.png" alt="" />
+                <div class="car-item-select-field">
+                  <p class="item-title">デイズ</p>
+                  <input type="checkbox" name="" id="" />
+                </div>
+              </li>
+              <li class="car-type-item">
+                <img src="./assets/img/catalog/content/car3.png" alt="" />
+                <div class="car-item-select-field">
+                  <p class="item-title">クリッパー</p>
+                  <input type="checkbox" name="" id="" />
+                </div>
+              </li>
+            </ul>
+            <div class="option-search-container option-makers">
+              <p class="title-text">オプション検索</p>
+              <ul class="option-contents">
+                <li class="option-item option-makers">
+                  <p class="item-title">排気量</p>
+                  <select class="gray" name="cc" id="">
+                    <option value="" selected>660cc</option>
+                    <option value="">ダミーcc</option>
+                    <option value="">ダミーcc</option>
+                  </select>
+                </li>
+                <li class="option-item option-makers">
+                  <p class="item-title">AT/MT</p>
+                  <div class="select-transmission gray">
+                    <button id="at-2" class="at-btn in-active">AT</button>
+                    <button id="mt-2" class="mt-btn">MT</button>
+                  </div>
+                </li>
+              </ul>
+              <button class="search-submit-btn">
+                この条件で探す
+                <img src="./assets/img/icon/arrowButton.png" alt="" />
+              </button>
+            </div>
+          </div>
+          <!-- /s-car-marker-container (car-maker) -->
+          <!-- s-keyword-container -->
+          <div class="s-keyword-container">
+            <p class="search-title">フリーワード検索</p>
+            <input type="text" placeholder="add text" />
+            <button class="search-submit-btn">
+              検索
+              <img src="./assets/img/icon/arrowButton.png" alt="" />
+            </button>
+          </div>
+          <!-- /s-keyword-container -->
+        </div>
+      </div>
+      <!-- /search-container -->
+      <!-- news-container -->
+      <div class="news-container">
+        <div class="content-heading">
+          <p class="title">お知らせ</p>
+          <button>一覧はこちら</button>
+        </div>
+        <ul class="news-list">
+          <li class="news-item">
+            <div>
+              <p class="date">2017/01/01</p>
+              <p class="text">タイトル　ダミーテキストダミーテキスト</p>
+              <img src="./assets/img/icon/arrowRight.png" alt="arrowButton" />
+            </div>
+          </li>
+          <li class="news-item">
+            <div>
+              <p class="date">2017/01/01</p>
+              <p class="text">タイトル　ダミーテキストダミーテキスト</p>
+              <img src="./assets/img/icon/arrowRight.png" alt="arrowButton" />
+            </div>
+          </li>
+          <li class="news-item">
+            <div>
+              <p class="date">2017/01/01</p>
+              <p class="text">タイトル　ダミーテキストダミーテキスト</p>
+              <img src="./assets/img/icon/arrowRight.png" alt="arrowButton" />
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- /news-container -->
+      <img
+        class="go-top-btn"
+        src="./assets/img/icon/backToTop.png"
+        alt="backToTopButton"
+      />
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="company-info">
+          <img
+            class="logo"
+            src="./assets/img/logo/tc-black-logo.svg"
+            alt="logo-image"
+          />
+          <p class="address-num">〒 000-0000</p>
+          <p class="address-text">
+            ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+          </p>
+        </div>
+        <div class="footer-nav">
+          <ul class="nav-list">
+            <li class="nav-item">試乗車検索</li>
+            <li class="nav-item">お気に入り一覧</li>
+            <li class="nav-item">お知らせ</li>
+            <li class="nav-item">サービスについて</li>
+            <li class="nav-item">プライバシーポリシー</li>
+            <li class="nav-item">利用規約</li>
+          </ul>
+        </div>
+      </div>
+      <div class="copylight">
+        <p>Copylight</p>
+      </div>
+    </footer>
+    <script type="text/javascript" src="./js/topSlider.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+  </body>
+</html>
