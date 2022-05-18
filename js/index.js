@@ -9,7 +9,7 @@ const mtBtn1 = document.getElementById("mt-1");
 const atBtn2 = document.getElementById("at-2");
 const mtBtn2 = document.getElementById("mt-2");
 
-const favBtnNum = carouselArea.childElementCount; // favボタンの数
+const carouselChildNum = carouselArea.childElementCount; // carouselの子要素数
 
 // 初回ロード時に、cssのトランジションを追加
 window.onload = () => {
@@ -38,8 +38,15 @@ leftSlideBtn.addEventListener("click", () => {
   carouselArea.style.left = `${nowPosition + carouselAreaWidth * 0.2 - 20}px`;
 });
 
-// favボタンの切り替えイベントを各ボタンに当てる
-for (let i = 1; i <= favBtnNum; i++) {
+// "./assets/img/catalog/slideshow/car5.png"
+// background: ;
+
+for (let i = 1; i <= carouselChildNum; i++) {
+  // 車の画像をbgに当てる
+  document.getElementById(
+    `carousel-car-${i}`
+  ).style.background = `url(../assets/img/catalog/slideshow/car${i}.png) no-repeat center / contain`;
+  // favボタンの切り替えイベントを各ボタンに当てる
   document
     .getElementById(`favorite-btn-${i}`)
     .addEventListener("click", (e) => {
