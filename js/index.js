@@ -38,14 +38,12 @@ leftSlideBtn.addEventListener("click", () => {
   carouselArea.style.left = `${nowPosition + carouselAreaWidth * 0.2 - 20}px`;
 });
 
-// "./assets/img/catalog/slideshow/car5.png"
-// background: ;
-
 for (let i = 1; i <= carouselChildNum; i++) {
-  // 車の画像をbgに当てる
+  // carousel-item のcar画像をbgで指定
   document.getElementById(
     `carousel-car-${i}`
-  ).style.background = `url(../assets/img/catalog/slideshow/car${i}.png) no-repeat center / contain`;
+  ).style.background = `url(./assets/img/catalog/slideshow/car${i}.png) no-repeat center /
+    contain`;
   // favボタンの切り替えイベントを各ボタンに当てる
   document
     .getElementById(`favorite-btn-${i}`)
