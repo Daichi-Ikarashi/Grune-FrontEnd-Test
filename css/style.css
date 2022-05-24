@@ -551,7 +551,7 @@ footer {
   }
 }
 
-/* === レスポンシブ sp === */
+/* === responsive sp === */
 @media screen and (max-width: 428px) {
   .logo {
     height: 26px;

@@ -1,23 +1,22 @@
-// DOMの取得
-const goTopBtn = document.querySelector(".go-top-btn"); // topへ戻るボタン
+// DOMs preparation
+const goTopBtn = document.querySelector(".go-top-btn");
 const leftSlideBtn = document.getElementById("arrow-left-slide");
 const rightSlideBtn = document.getElementById("arrow-right-slide");
 const carouselArea = document.querySelector(".carousel-area-f");
-// at, mt ボタン取得
 const atBtn1 = document.getElementById("at-1");
 const mtBtn1 = document.getElementById("mt-1");
 const atBtn2 = document.getElementById("at-2");
 const mtBtn2 = document.getElementById("mt-2");
 
-const carouselChildNum = carouselArea.childElementCount; // carouselの子要素数
+const carouselChildNum = carouselArea.childElementCount; // sum of carousels child element
 
-// 初回ロード時に、cssのトランジションを追加
+// Added css transitions on first load
 window.onload = () => {
   document.querySelector(".top-slider-area").style.transition = "0.5s";
   document.querySelector(".carousel-area-f").style.transition = "0.5s";
 };
 
-// topへスクロールする処理
+// scroll to the top
 goTopBtn.addEventListener("click", () => {
   window.scrollTo({
     top: 0,
@@ -25,7 +24,7 @@ goTopBtn.addEventListener("click", () => {
   });
 });
 
-// カルーセルのarrowボタンの処理
+// Carousel arrow button handling
 rightSlideBtn.addEventListener("click", () => {
   let nowPosition = carouselArea.offsetLeft;
   let carouselAreaWidth = carouselArea.clientWidth;
@@ -39,12 +38,12 @@ leftSlideBtn.addEventListener("click", () => {
 });
 
 for (let i = 1; i <= carouselChildNum; i++) {
-  // carousel-item のcar画像をbgで指定
+  // Set car image of carousel-item as background image
   document.getElementById(
     `carousel-car-${i}`
   ).style.background = `url(./assets/img/catalog/slideshow/car${i}.png) no-repeat center /
     contain`;
-  // favボタンの切り替えイベントを各ボタンに当てる
+  // Add a change event for the fav button to each button
   document
     .getElementById(`favorite-btn-${i}`)
     .addEventListener("click", (e) => {
@@ -52,7 +51,7 @@ for (let i = 1; i <= carouselChildNum; i++) {
     });
 }
 
-// 検索optionの AT/MT ボタンの処理
+// Function of AT / MT button of search option
 atBtn1.addEventListener("click", () => {
   atBtn1.classList.toggle("in-active");
   mtBtn1.classList.toggle("in-active");
