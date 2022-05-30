@@ -111,7 +111,7 @@ header .h-nav-item {
   display: flex;
   position: absolute;
   left: 0;
-  background-color: #111;
+  background-color: #222;
 }
 
 .slider-item {
@@ -542,6 +542,13 @@ footer {
 
 /* === レスポンシブ tablet === */
 @media screen and (max-width: 834px) {
+  .top-slider,
+  .slider-item {
+    height: 30vh;
+  }
+  .slider-item {
+    line-height: 30vh;
+  }
   .carousel-area-f {
     width: calc(33% * 5);
   }
