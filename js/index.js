@@ -37,8 +37,8 @@ leftSlideBtn.addEventListener("click", () => {
   carouselArea.style.left = `${nowPosition + carouselAreaWidth * 0.2 - 20}px`;
 });
 
+// Set car image of carousel-item as background image
 for (let i = 1; i <= carouselChildNum; i++) {
-  // Set car image of carousel-item as background image
   document.getElementById(
     `carousel-car-${i}`
   ).style.background = `url(./assets/img/catalog/slideshow/car${i}.png) no-repeat center /
